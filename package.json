@@ -1,0 +1,26 @@
+{
+  "name": "whatshouldidotoday",
+  "version": "1.0.0",
+  "description": "Recommend activities based on location and weather",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint . --verbose && jscs . --recursive",
+    "watch": "nodemon --watch lib --watch config"
+  },
+  "author": "samirluheshi@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "request": "^2.87.0"
+  },
+  "engine": {
+    "node": "~6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

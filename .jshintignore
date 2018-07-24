@@ -1,0 +1,5 @@
+puppet
+node_modules
+coverage
+constraints
+island
