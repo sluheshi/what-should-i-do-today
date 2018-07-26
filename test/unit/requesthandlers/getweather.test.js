@@ -15,11 +15,16 @@ var uut = rewire('../../../lib/requesthandlers/getweather.js');
 
 describe('weather tests', function() {
 
-  it('placeholder', function(done) {
+  it('good weather', function() {
 
-    done();
-    //expect(expectedApiEntity).to.eql(result);
+    var result = uut.goodOrBadWeather({main: {temp: 32}});
+    expect(result).to.eql('good');
+  });
 
+  it('bad weather', function() {
+
+    var result = uut.goodOrBadWeather({main: {temp: 15}});
+    expect(result).to.eql('bad');
   });
 
 });
