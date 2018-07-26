@@ -17,13 +17,13 @@ describe('weather tests', function() {
 
   it('good weather', function() {
 
-    var result = uut.goodOrBadWeather({main: {temp: 32}});
+    var result = uut.goodOrBadWeather({ main: { temp: 32 } });
     expect(result).to.eql('good');
   });
 
   it('bad weather', function() {
 
-    var result = uut.goodOrBadWeather({main: {temp: 15}});
+    var result = uut.goodOrBadWeather({ main: { temp: 15 } });
     expect(result).to.eql('bad');
   });
 
