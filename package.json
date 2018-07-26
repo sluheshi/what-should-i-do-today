@@ -4,15 +4,16 @@
   "description": "Recommend activities based on location and weather",
   "author": "samirluheshi@gmail.com",
   "license": "ISC",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/sluheshi/what-should-i-do-today.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sluheshi/what-should-i-do-today.git"
   },
   "main": "./lib/index.js",
   "scripts": {
     "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "jshint . --verbose && jscs . --recursive",
+    "unit": "mocha \"./test/unit/**/*.test.js\" -b -R spec --timeout 100000",
     "watch": "nodemon --watch lib --watch config"
   },
   "dependencies": {
@@ -22,9 +23,17 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "chai": "^4.1.2",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.5",
+    "mocha": "^5.2.0",
+    "node-mocks-http": "^1.7.0",
+    "nodemon": "^1.18.3",
+    "rewire": "^4.0.1",
+    "sinon": "^6.1.4",
+    "sinon-chai": "^3.2.0"
   },
   "engine": {
-  "node": "~6.9"
+    "node": "~6.9"
   }
 }

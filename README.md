@@ -18,5 +18,8 @@ export OPENWEATHERMAPAPIKEY={weatherkey}
 *Usage*
 - query the service as follows curl localhost:3000/location?address=London,England for example
 
+*Tests*
+- run npm run unit
+
 
 
