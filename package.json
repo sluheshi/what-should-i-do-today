@@ -2,6 +2,12 @@
   "name": "whatshouldidotoday",
   "version": "1.0.0",
   "description": "Recommend activities based on location and weather",
+  "author": "samirluheshi@gmail.com",
+  "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/sluheshi/what-should-i-do-today.git"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "start": "node ./index.js",
@@ -9,18 +15,16 @@
     "lint": "jshint . --verbose && jscs . --recursive",
     "watch": "nodemon --watch lib --watch config"
   },
-  "author": "samirluheshi@gmail.com",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
     "request": "^2.87.0"
   },
-  "engine": {
-    "node": "~6.9"
-  },
   "devDependencies": {
     "nodemon": "^1.18.3"
+  },
+  "engine": {
+  "node": "~6.9"
   }
 }
